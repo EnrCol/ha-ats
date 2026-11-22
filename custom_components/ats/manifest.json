@@ -10,10 +10,10 @@
     "http",
     "lovelace"
   ],
-  "documentation": "https://github.com/EnrCol/ats-ha",
+  "documentation": "https://github.com/EnrCol/ha-ats",
   "integration_type": "service",
   "iot_class": "cloud_polling",
-  "issue_tracker": "https://github.com/EnrCol/ats-ha/issues",
+  "issue_tracker": "https://github.com/EnrCol/ha-ats/issues",
   "requirements": [],
   "version": "0.4.1"
 }

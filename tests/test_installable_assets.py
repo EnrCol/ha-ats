@@ -14,8 +14,8 @@ def test_manifest_and_frontend_asset_in_installed_integration():
     manifest = json.loads((INTEGRATION / "manifest.json").read_text())
     assert manifest["version"] == "0.4.1"
     assert manifest["codeowners"] == ["@EnrCol"]
-    assert manifest["documentation"] == "https://github.com/EnrCol/ats-ha"
-    assert manifest["issue_tracker"] == "https://github.com/EnrCol/ats-ha/issues"
+    assert manifest["documentation"] == "https://github.com/EnrCol/ha-ats"
+    assert manifest["issue_tracker"] == "https://github.com/EnrCol/ha-ats/issues"
     assert {"frontend", "http", "lovelace"} <= set(manifest["dependencies"])
 
     card = (INTEGRATION / "www" / "invoice-history-card.js").read_text()

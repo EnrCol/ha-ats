@@ -1,10 +1,10 @@
 # Alto Trevigiano Servizi (ATS) for Home Assistant
 
-[Italiano](README.md) · English · [Stable v0.4.1](https://github.com/EnrCol/ats-ha/releases/tag/v0.4.1)
+[Italiano](README.md) · English · [Stable v0.4.1](https://github.com/EnrCol/ha-ats/releases/tag/v0.4.1)
 
 **Unofficial integration** that brings water supplies, invoices, payments and meter readings from the [Alto Trevigiano Servizi customer portal](https://sgc.altotrevigianoservizi.it/) into Home Assistant. This project is **not** affiliated with, approved by, or supported by ATS. Portal changes can affect the integration.
 
-**v0.4.0 was the first stable release of the [EnrCol/ats-ha fork](https://github.com/EnrCol/ats-ha)**, based on the original work by [Manu-Nat](https://github.com/Manu-Nat/ats-ha). **v0.4.1 is a maintenance release:** the current maintainer displayed by Home Assistant is **[@EnrCol](https://github.com/EnrCol)**. Manu-Nat's original authorship, MIT copyright and license remain unchanged. It was functionally tested on Home Assistant TEST Core **2026.11.0**, with real ATS login, 19 sensors, 22 invoices, private PDF downloads, and the built-in Lovelace viewer. “Stable” indicates this project's release status, **not** official Home Assistant/ATS certification.
+**v0.4.0 was the first stable release of the [EnrCol/ha-ats fork](https://github.com/EnrCol/ha-ats)**, based on the original work by [Manu-Nat](https://github.com/Manu-Nat/ats-ha). **v0.4.1 is a maintenance release:** the current maintainer displayed by Home Assistant is **[@EnrCol](https://github.com/EnrCol)**. Manu-Nat's original authorship, MIT copyright and license remain unchanged. It was functionally tested on Home Assistant TEST Core **2026.11.0**, with real ATS login, 19 sensors, 22 invoices, private PDF downloads, and the built-in Lovelace viewer. “Stable” indicates this project's release status, **not** official Home Assistant/ATS certification.
 
 ## Features
 
@@ -52,7 +52,7 @@ Invoice-year calculations use **issue date**, not billing-period dates. Paid inv
 
 ### Marketplace / HACS (recommended)
 
-1. In the Home Assistant **Marketplace** or HACS, add the custom repository `EnrCol/ats-ha`, category **Integration**.
+1. In the Home Assistant **Marketplace** or HACS, add the custom repository `EnrCol/ha-ats`, category **Integration**.
 2. Install **Alto Trevigiano Servizi (ATS)** version **v0.4.1** (the stable release, not an older beta).
 3. **Restart Home Assistant** to activate the custom integration.
 4. Open **Settings → Devices & services → Add integration → Alto Trevigiano Servizi**.
@@ -61,7 +61,7 @@ Invoice-year calculations use **issue date**, not billing-period dates. Paid inv
 
 ### Manual installation
 
-Download the [v0.4.1 source archive](https://github.com/EnrCol/ats-ha/archive/refs/tags/v0.4.1.zip), copy the complete `custom_components/ats/` directory (including `www/`) into `/config/custom_components/ats/`, restart HA, and complete the integration flow. Keep `/config` persistent. Do **not** copy config entries, passwords or invoice files from another installation.
+Download the [v0.4.1 source archive](https://github.com/EnrCol/ha-ats/archive/refs/tags/v0.4.1.zip), copy the complete `custom_components/ats/` directory (including `www/`) into `/config/custom_components/ats/`, restart HA, and complete the integration flow. Keep `/config` persistent. Do **not** copy config entries, passwords or invoice files from another installation.
 
 Existing legacy setups retain advanced options for cookie, HTTPS origin and API paths. Those fields are not shown in the first-run wizard.
 
@@ -124,6 +124,6 @@ The beta.8 foundation passed **133 Python tests, 3 subtests and 6 JavaScript tes
 - [v0.4.1 release notes](docs/releases/v0.4.1.md) · [v0.4.0 history](docs/releases/v0.4.0.md)
 - [Clean-install verification checklist](docs/test-ha-clean.md)
 - [Energy dashboard date/consumption migration](docs/dashboard-energia-ats-beta5.md)
-- [Report issues](https://github.com/EnrCol/ats-ha/issues)
+- [Report issues](https://github.com/EnrCol/ha-ats/issues)
 
 When reporting an issue, include HA version, ATS version, symptoms and redacted diagnostics; never include personal account or invoice details.

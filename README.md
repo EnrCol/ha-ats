@@ -1,10 +1,10 @@
 # Alto Trevigiano Servizi (ATS) per Home Assistant
 
-[Italiano](README.md) · [English](README.en.md) · [Release v0.4.1](https://github.com/EnrCol/ats-ha/releases/tag/v0.4.1)
+[Italiano](README.md) · [English](README.en.md) · [Release v0.4.1](https://github.com/EnrCol/ha-ats/releases/tag/v0.4.1)
 
 **Integrazione non ufficiale** per leggere forniture idriche, fatture e letture dallo [Sportello Online Alto Trevigiano Servizi](https://sgc.altotrevigianoservizi.it/) direttamente in Home Assistant. Non è affiliata, approvata o supportata da ATS. Il portale può modificare le proprie API in qualsiasi momento.
 
-La **v0.4.0 è la prima release stabile del fork [EnrCol/ats-ha](https://github.com/EnrCol/ats-ha)**, sviluppata a partire dal progetto di [Manu-Nat](https://github.com/Manu-Nat/ats-ha). **La v0.4.1 è una release di manutenzione:** il manutentore corrente indicato a Home Assistant è **[@EnrCol](https://github.com/EnrCol)**, mentre la paternità originale, il copyright e la licenza MIT di Manu-Nat restano invariati. È stata collaudata su Home Assistant TEST Core **2026.11.0** con login reale, 19 sensori, 22 fatture, download e visualizzazione dei PDF, anche senza Browser Mod. È una release stabile del progetto, **non una certificazione ufficiale Home Assistant/ATS**.
+La **v0.4.0 è la prima release stabile del fork [EnrCol/ha-ats](https://github.com/EnrCol/ha-ats)**, sviluppata a partire dal progetto di [Manu-Nat](https://github.com/Manu-Nat/ats-ha). **La v0.4.1 è una release di manutenzione:** il manutentore corrente indicato a Home Assistant è **[@EnrCol](https://github.com/EnrCol)**, mentre la paternità originale, il copyright e la licenza MIT di Manu-Nat restano invariati. È stata collaudata su Home Assistant TEST Core **2026.11.0** con login reale, 19 sensori, 22 fatture, download e visualizzazione dei PDF, anche senza Browser Mod. È una release stabile del progetto, **non una certificazione ufficiale Home Assistant/ATS**.
 
 ## Funzionalità
 
@@ -56,7 +56,7 @@ La previsione dei consumi usa la differenza delle ultime due letture validate pe
 
 ### Marketplace / HACS (consigliato)
 
-1. Apri il **Marketplace** di Home Assistant (o HACS, se presente). Aggiungi `EnrCol/ats-ha` fra i repository personalizzati, categoria **Integrazione**.
+1. Apri il **Marketplace** di Home Assistant (o HACS, se presente). Aggiungi `EnrCol/ha-ats` fra i repository personalizzati, categoria **Integrazione**.
 2. Installa **Alto Trevigiano Servizi (ATS)** nella versione **v0.4.1**, non una vecchia beta.
 3. **Riavvia Home Assistant** per caricare il codice dell'integrazione.
 4. Apri **Impostazioni → Dispositivi e servizi → Aggiungi integrazione → Alto Trevigiano Servizi**.
@@ -65,7 +65,7 @@ La previsione dei consumi usa la differenza delle ultime due letture validate pe
 
 ### Installazione manuale
 
-Scarica il [pacchetto della release v0.4.1](https://github.com/EnrCol/ats-ha/archive/refs/tags/v0.4.1.zip). Copia **l'intera cartella** `custom_components/ats/` in `/config/custom_components/ats/`, **compresa `www/`**. Riavvia Home Assistant e completa la configurazione tramite l'interfaccia. Non copiare credenziali o file `.storage` da altre installazioni.
+Scarica il [pacchetto della release v0.4.1](https://github.com/EnrCol/ha-ats/archive/refs/tags/v0.4.1.zip). Copia **l'intera cartella** `custom_components/ats/` in `/config/custom_components/ats/`, **compresa `www/`**. Riavvia Home Assistant e completa la configurazione tramite l'interfaccia. Non copiare credenziali o file `.storage` da altre installazioni.
 
 Le impostazioni manuali legacy di una configurazione già presente (cookie, URL e percorsi API) restano disponibili nelle **opzioni dell'integrazione** per compatibilità. Non vengono richieste durante un primo avvio nuovo.
 
@@ -127,6 +127,6 @@ Sulla beta.8 alla base della release sono passati **133 test Python, 3 subtest, 
 - [Note di rilascio v0.4.1](docs/releases/v0.4.1.md) · [Storico v0.4.0](docs/releases/v0.4.0.md)
 - [Checklist di installazione e test](docs/test-ha-clean.md)
 - [Migrazione template data/consumi](docs/dashboard-energia-ats-beta5.md)
-- [Problemi e richieste](https://github.com/EnrCol/ats-ha/issues)
+- [Problemi e richieste](https://github.com/EnrCol/ha-ats/issues)
 
 Per un problema indica versione di Home Assistant, release ATS, sintomo ed eventuali log **ripuliti dai dati sensibili**.

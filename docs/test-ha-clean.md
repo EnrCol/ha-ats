@@ -10,7 +10,7 @@
 
 ## Installazione
 1. Prima del test salvare uno snapshot o backup della configurazione di test.
-2. Installare la release `v0.4.1` dal fork `EnrCol/ats-ha`
+2. Installare la release `v0.4.1` dal fork `EnrCol/ha-ats`
    attraverso Marketplace (repository personalizzato, categoria *Integrazione*).
    In alternativa copiare **tutta** `custom_components/ats`.
 3. Riavviare Home Assistant una volta sola per caricare il codice Python.
